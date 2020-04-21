@@ -141,7 +141,7 @@ class TXServerAddressConfig: TXCopyingProtocol {
     /// 构造方法
     ///
     /// - Parameters:
-    ///   - configServerAddressCompletion: 配置服务器地址回调.
+    ///   - configServerAddressCompletion: 配置服务器地址闭包.
     ///
     init(configServerAddressCompletion: TXConfigServerAddressClosures) {
         configServerAddressCompletion(self)
