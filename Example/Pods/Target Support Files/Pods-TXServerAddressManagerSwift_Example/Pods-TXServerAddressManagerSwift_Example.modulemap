@@ -1,0 +1,6 @@
+framework module Pods_TXServerAddressManagerSwift_Example {
+  umbrella header "Pods-TXServerAddressManagerSwift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

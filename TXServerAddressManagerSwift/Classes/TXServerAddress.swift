@@ -9,16 +9,16 @@
 import Foundation
 
 /// 服务器地址 
-class TXServerAddress: TXCopyingProtocol {
+public class TXServerAddress: TXCopyingProtocol {
     
     /// 服务器地址(存储属性)
-    var serverAddress: String?
+    public var serverAddress: String?
     
     /// 服务器端口(存储属性)
-    var serverPort: String?
+    public var serverPort: String?
     
     /// 构造方法1
-    init() {
+    public init() {
         
     }
     
@@ -38,19 +38,19 @@ class TXServerAddress: TXCopyingProtocol {
     ///   - serverAddress: 服务器地址.
     ///   - serverPort:服务器端口.
     ///
-    convenience init(serverAddress: String?,serverPort: String?) {
+    public convenience init(serverAddress: String?,serverPort: String?) {
         self.init()
         self.serverAddress = serverAddress
         self.serverPort = serverPort
     }
     
-    typealias T = TXServerAddress
+    public typealias T = TXServerAddress
     
-    func copy() -> T {
+    public func copy() -> T {
         return self
     }
 
-    func mutableCopy() -> T {
+    public func mutableCopy() -> T {
         return .init(serverAddress: self.serverAddress, serverPort: self.serverPort)
     }
     

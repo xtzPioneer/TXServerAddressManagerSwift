@@ -1,0 +1,16 @@
+PODS:
+  - TXServerAddressManagerSwift (0.1.0)
+
+DEPENDENCIES:
+  - TXServerAddressManagerSwift (from `../`)
+
+EXTERNAL SOURCES:
+  TXServerAddressManagerSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TXServerAddressManagerSwift: 9b47d2aef90c2b824c711ab1af4ff84d0f50e87e
+
+PODFILE CHECKSUM: 61959d88e842a2246d4d4f9b8ab8d3f251613c10
+
+COCOAPODS: 1.9.1

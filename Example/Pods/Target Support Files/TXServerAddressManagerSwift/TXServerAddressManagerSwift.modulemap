@@ -1,0 +1,6 @@
+framework module TXServerAddressManagerSwift {
+  umbrella header "TXServerAddressManagerSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

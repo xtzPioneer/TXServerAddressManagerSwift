@@ -9,7 +9,7 @@
 import Foundation
 
 /// 复制协议
-protocol TXCopyingProtocol {
+public protocol TXCopyingProtocol {
     
     /// 关联类型
     associatedtype T
