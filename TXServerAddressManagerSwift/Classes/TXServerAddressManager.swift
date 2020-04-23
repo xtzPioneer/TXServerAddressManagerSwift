@@ -8,13 +8,6 @@
 
 import Foundation
 
-///
-/// 设置服务器配置集合闭包
-/// - Returns
-///   服务器配置集合.
-///
-public typealias TXConfigsServerAddresssClosures = () -> Dictionary <String,TXServerAddressConfig>
-
 /// 服务器管理器
 public class TXServerAddressManager {
     
@@ -23,6 +16,13 @@ public class TXServerAddressManager {
         let shared:TXServerAddressManager = .init()
         return shared
     }()
+    
+    ///
+    /// 设置服务器配置集合闭包
+    /// - Returns
+    ///   服务器配置集合.
+    ///
+    public typealias TXConfigsServerAddresssClosures = () -> Dictionary <String,TXServerAddressConfig>
     
     /// 服务器配置集合
     public var configs: Dictionary <String,TXServerAddressConfig> = Dictionary <String,TXServerAddressConfig>()
