@@ -17,15 +17,15 @@ public class TXServerAddressManager {
         return shared
     }()
     
+    /// 服务器配置集合
+    public var configs: Dictionary <String,TXServerAddressConfig> = Dictionary <String,TXServerAddressConfig>()
+    
     ///
     /// 设置服务器配置集合闭包
     /// - Returns
     ///   服务器配置集合.
     ///
     public typealias TXConfigsServerAddresssClosures = () -> Dictionary <String,TXServerAddressConfig>
-    
-    /// 服务器配置集合
-    public var configs: Dictionary <String,TXServerAddressConfig> = Dictionary <String,TXServerAddressConfig>()
     
     ///
     /// 配置服务器地址
